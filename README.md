@@ -14,8 +14,19 @@ To get the project locally and in Android Studio:
     (Enter credentials and login if required)
 )
 
-- Check out project from Version Control > Git
-  => Specify the URL (of this repository) and the local destination directory, then click on "Clone".
+- Create a new repository to detach the project from the original repository:
+  - Create a new empty repository (e.g. at GitHub)
+  - "Bare-clone" this repository:
+    git clone --bare URL_TO_THIS_REPOSITORY
+  - Go in the newly created directory containing the cloned repository
+  - Push the project to the new repository:
+    git push --mirror URL_TO_NEW_REPOSITORY
+  - Delete the local directory
+
+- Start Android Studio with no opened project (close opened ones if any)
+
+- Select "Check out project from Version Control" > "Git"
+  => Specify the URL of the new repository (URL_TO_NEW_REPOSITORY) and the local destination directory, then click on "Clone".
     This step can be done outside of Android Studio, using the Git CLI (which actually makes more sense, as this repository isn't exactly an Android Studio project).
 
 - A pop-up appears with the following message:
@@ -50,19 +61,6 @@ To get the project locally and in Android Studio:
 
 - Synchronize the projects.
   => "Sync Project with Gradle Files"
-
-
-Once the project is loaded and ready in Android Studio, a new repository should be created to hold the changes made:
-- Create a new empty repository (e.g. at GitHub)
-- In the Git CLI (e.g. Git Bash), execute the following commands:
-  git remote rename origin upstream
-  git remote add origin URL_TO_NEW_EMPTY_REPOSITORY
-  git push origin master
-  If this last command fails with the error "error: failed to push some refs to 'URL_TO_NEW_EMPTY_REPOSITORY'", use the following command:
-    git push --mirror URL_TO_NEW_EMPTY_REPOSITORY
-
-The new repository is now ready to accept changes from the project.
-(To pull in patches from upstream, simply run git pull upstream master && git push origin master)
 
 
 If changes have been made to the engine:
