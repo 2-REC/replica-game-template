@@ -1,0 +1,62 @@
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.replica.game"
+    >
+
+    <application>
+        <activity
+            android:name="com.replica.engine.StartupActivity"
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation"
+        />
+        <activity
+            android:name="com.replica.engine.EndingActivity"
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation"
+        />
+        <activity
+            android:name="SetPreferencesActivityImpl"
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation"
+        />
+        <activity
+            android:name="com.replica.engine.LevelSelectActivityImpl"
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation"
+        />
+        <activity
+            android:name="MainMenuActivityImplSpecific"
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation"
+        />
+        <activity
+            android:name="MainImpl"
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation"
+        />
+        <activity
+            android:name="com.replica.engine.DifficultyMenuActivityImpl"
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation"
+        />
+        <activity
+            android:name="com.replica.engine.AnimationPlayerActivityImpl"
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation"
+        />
+        <activity
+            android:name="ResultsGameOverActivityImpl"
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation"
+        />
+<!-- //////// lev res - m -->
+        <activity
+            android:name="ResultsLevelActivityImpl"
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation"
+        />
+<!-- //////// lev res - e -->
+
+    </application>
+
+</manifest>

@@ -1,0 +1,2 @@
+include ':app', ':engine'
+project(':engine').projectDir = new File('engine_git/ReplicaEngine/app')
