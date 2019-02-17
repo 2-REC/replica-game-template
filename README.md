@@ -70,6 +70,10 @@ If changes have been made to the engine:
     git pull
     (git pull origin master)
 
+  If the engine is detached from the original repository (message: "HEAD detached at ..."), execute the following command to reattach:
+  git chekcout master
+  (or to another branch if desired)
+
 - Commit changes
   => Project pointing to new revision of library.
 
