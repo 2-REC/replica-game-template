@@ -1,3 +1,6 @@
 
+- code_snippets
+  => code snippets from previous versions, interesting for specific objects/components
+
 - tmp_replica__20171008_level_0_1__TO_TRY
   => Recreation of the first level of the original game. Need to be tested (and corrected...?)
