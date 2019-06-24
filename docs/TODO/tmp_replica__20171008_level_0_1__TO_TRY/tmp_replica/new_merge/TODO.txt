@@ -1,0 +1,12 @@
+
+
+
+values:
+- test if ok with separate strings files...
+  - dialogs.xml
+  - levels.xml
+
+xml:
+level_tree.xml
+  - test if "waitmessage" still works
+

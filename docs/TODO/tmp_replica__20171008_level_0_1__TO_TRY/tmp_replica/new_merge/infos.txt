@@ -1,0 +1,39 @@
+
+
+convert a level to the engine:
+
+- edit in hexa & parse file to extract each layer in a separate file
+	Each layer starts from byte "2A".
+
+	signature		1			96
+	layerCount		1
+	backgroundIndex		1
+
+	for each layer:
+		type		1
+		tileIndex	1
+		scrollSpeed	4			(float)
+
+		world (TiledWorld)
+		signature	1			42
+		mRowCount	4			(int)
+		mColCount	4			(int)
+		mTilesArray	mRowCount*mColCount	(int[][])
+
+- set files extension to "bin"
+- correct hot spots
+	- in hot spots layer (TYPE == 03), replace hot spots values that are different than "FF" by new correspondent values.
+		(see "hotspots_correspondences.txt" for correspondences)
+- create level's xml file
+	- refer bin files
+		- !!!! layer used for "main layer" is the first one with "TYPE == 0" ????
+	- set dialogs
+		(+ create dialog file & strings)
+- refer level xml file in level_tree.xml
+- get all required drawables (& strings)
+
+...
+test...
+
+
+

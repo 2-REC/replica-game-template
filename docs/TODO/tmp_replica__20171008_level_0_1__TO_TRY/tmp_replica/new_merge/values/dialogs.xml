@@ -1,0 +1,9 @@
+<resources>
+    <!-- GAME - BEGIN -->
+    <!-- Dialogs -->
+    <string name="Wanda">Wanda</string>
+    <string name="Wanda_0_1_1_1">Oh no!</string>
+    <string name="Wanda_0_1_1_2">Looks like he landed OK but his memory array is all smashed.  Kyle has really crossed the line this time!</string>
+    <string name="Wanda_0_1_1_3">Hmm, his self-repair mechanism is still intact.  If I can just reconnect the power...</string>
+    <!-- GAME - END -->
+</resources>
